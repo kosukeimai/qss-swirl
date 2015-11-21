@@ -1,3 +1,4 @@
 # qss-swirl
-Swirl Lessons for ``A First Course in Quantitative Social Science.''
-See also [the qss main repo](../../../qss).
+Swirl Lessons for the book manuscript, ``A First Course in Quantitative Social Science.''
+
+See also the main repo, [qss](../../../qss), for other supplementary materials.
