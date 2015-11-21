@@ -24,6 +24,6 @@ swirl()
 uninstall_course("qss-swirl")
 ```
 
-* Update the `qss-swirl` lessons.  
+* Update the `qss-swirl` lessons:  
   1. Uninstall `qss-swirl` 
   2. Install `qss-swirl`
