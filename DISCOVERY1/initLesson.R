@@ -10,7 +10,7 @@ install.packages("NLP")
 library(tm, SnowballC)
 
 # Make path to lesson directory
-lesson_dir <- file.path(path.package("socraticswirl"), "Courses", "DISCOVERY", "DISCOVERY1", "federalist")
+lesson_dir <- file.path(path.package("swirl"), "Courses", "qss-swirl", "DISCOVERY1", "federalist")
 
 # Load raw corpus
 corpus.raw <- Corpus(DirSource(directory = lesson_dir, pattern = "fp")) 
