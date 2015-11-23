@@ -5,8 +5,8 @@
 
 
 # Make path to lesson directory
-lesson_dir <- file.path(path.package("swirl"), "Courses",
-                        "qss-swirl", "CAUSALITY1")
+lesson_dir <- file.path(path.package("socraticswirl"), "Courses",
+                        "CAUSALITY", "CAUSALITY1")
 
 # Make path to data and let user call read.csv(data_path)
 data_path <- file.path(lesson_dir, "resume.csv")
