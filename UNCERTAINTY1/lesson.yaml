@@ -8,7 +8,7 @@
 
 # Question 1
 - Class: mult_question
-  Output: 'Which statement best describes how simple randomization differs from complete randomization?'
+  Output: 'Which statement best describes how complete randomization differs from simple randomization?'
   AnswerChoices: 'Only part of our sample is randomly chosen; We randomize part of the sample but do not randomize the treatment; We choose how much of the sample receives treatment a priori; We randomize the sample, a priori'
   CorrectAnswer: 'We choose how much of the sample receives treatment a priori'
   AnswerTests: omnitest(correctVal='We choose how much of the sample receives treatment a priori')
