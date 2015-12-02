@@ -56,7 +56,7 @@
 - Class: cmd_question
   Output: 'Chapter 5 also introduces several important R extensions, or packages. Use the "install.packages()" function to install the "wordcloud" package.'
   CorrectAnswer: install.packages("wordcloud")
-  AnswerTests: omnitest(correctVal = 'install.packages("wordcloud")')
+  AnswerTests: omnitest(correctExpr = 'install.packages("wordcloud")')
 
 # Question 6
 - Class: cmd_question
