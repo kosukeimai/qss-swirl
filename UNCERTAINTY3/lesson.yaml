@@ -47,10 +47,10 @@
   Hint: See 7.3.3.
 
 # Question 6
-- Class: exact_question
+- Class: cmd_question
   Output: 'For 765 observations and 8 explanatory variables in a linear regression model with an intercept, when calculating the p-values for the coefficients how many degrees of freedom will the t-statistic have?'
   CorrectAnswer: '756'
-  AnswerTests: omnitest(correctVal='756')
+  AnswerTests: omnitest(correctExpr='756')
   Hint: See toward the end of 7.3.2.
 
 # Question 7
