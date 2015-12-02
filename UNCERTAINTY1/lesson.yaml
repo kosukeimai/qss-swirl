@@ -23,10 +23,10 @@
   Hint: See 7.1.2.
 
 # Question 3
-- Class: exact_question
+- Class: cmd_question
   Output: 'The variance in a population is 5. For a sample of size 10 from that population, what is the variance in the sample mean (express your answer to the nearest 0.1)?'
   CorrectAnswer: '0.5'
-  AnswerTests: omnitest(correctVal='0.5')
+  AnswerTests: omnitest(correctExtr='0.5')
   Hint: See 7.1.2. Use the Central Limit Theorem.
 
 # Question 4
@@ -60,17 +60,17 @@
   Hint: See 7.1.4.
 
 # Question 8
-- Class: exact_question
+- Class: cmd_question
   Output: 'I flip a fair coin 27 times. What is the variance in the expected number of heads (express to the nearest 0.001)?'
   CorrectAnswer: '0.009'
-  AnswerTests: omnitest(correctVal='0.009')
+  AnswerTests: omnitest(correctExpr='0.009')
   Hint: See 7.1.2. What does the Central Limit Theorem say?
 
 # Question 9
-- Class: exact_question
+- Class: cmd_question
   Output: 'Now, I flip a coin of unknown bias 10 times. It comes up heads 8 times. What is the (non-negative) margin of error, calculated from a 95% confidence interval for the true probability the coin comes up heads (to the nearest 0.01)?'
   CorrectAnswer: '0.25'
-  AnswerTests: omnitest(correctVal='0.25')
+  AnswerTests: omnitest(correctExpr='0.25')
   Hint: See 7.1.3.
 
 # Question 10
