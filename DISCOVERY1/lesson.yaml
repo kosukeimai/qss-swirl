@@ -72,7 +72,7 @@
 - Class: cmd_question
   Output: 'Use the "inspect()" function to visualize the first 5 rows and 8 columns of "dtm".'
   CorrectAnswer: inspect(dtm[1:5, 1:8])
-  AnswerTests: omnitest(correctVal='inspect(dtm[1:5, 1:8]')
+  AnswerTests: omnitest(correctExpr='inspect(dtm[1:5, 1:8])')
   Hint: See 'The Disputed Authorship of The Federalist Papers'.
 
 # Question 8

@@ -38,10 +38,10 @@
   Hint: See 7.1.2.
 
 # Question 5
-- Class: exact_question
+- Class: cmd_question
   Output: 'In our sample of voters we find that 70% of the participants support Obama. If we want our 95% confidence interval for the true population proportion to be within +/- 1% of the true value, what is the minimum number of participants we must ask?'
-  CorrectAnswer: 8068
-  AnswerTests: expr_identical_to('8068')
+  CorrectAnswer: '8068'
+  AnswerTests: omnitest(correctExpr='8068')
   Hint: See 7.1.3. How does margin of error allow us to determine the sample size given a predetermined level of significance?'
 
 # Question 6
