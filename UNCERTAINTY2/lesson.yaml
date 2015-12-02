@@ -31,17 +31,17 @@
   Hint: See 7.2.5.
 
 # Question 4
-- Class: exact_question
+- Class: cmd_question
   Output: 'You have a coin which you suspect is unfair and instead shows heads with probability 0.7. So, you decide to test this by flipping it exactly once: if heads comes up, you say it is unfair, otherwise, you say it is fair. What is the power of this test (express to the nearest 0.1)?'
   CorrectAnswer: '0.7'
-  AnswerTests: omnitest(correctVal='0.7')
+  AnswerTests: omnitest(correctExpr='0.7')
   Hint: See 7.2.6.
 
 # Question 5
-- Class: exact_question
+- Class: cmd_question
   Output: 'Flipping a coin once is not super informative, you think to yourself, and so decide to flip the coin two more times. If any heads appear, you say the coin is unfair, otherwise, you say it is fair. With these three flips in total, what is the power of the test now (express to the nearest 0.001)?'
   CorrectAnswer: '0.875'
-  AnswerTests: omnitest(correctVal='0.875')
+  AnswerTests: omnitest(correctExpr='0.875')
   Hint: See 7.2.6.
 
 # Question 6
