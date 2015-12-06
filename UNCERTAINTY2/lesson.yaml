@@ -40,8 +40,8 @@
 # Question 5
 - Class: cmd_question
   Output: 'Flipping a coin once is not super informative, you think to yourself, and so decide to flip the coin two more times. If any heads appear, you say the coin is unfair, otherwise, you say it is fair. With these three flips in total, what is the power of the test now (express to the nearest 0.001)?'
-  CorrectAnswer: '0.875'
-  AnswerTests: omnitest(correctExpr='0.875')
+  CorrectAnswer: '0.973'
+  AnswerTests: omnitest(correctExpr='0.973')
   Hint: See 7.2.6.
 
 # Question 6
