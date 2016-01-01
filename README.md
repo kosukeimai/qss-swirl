@@ -1,7 +1,7 @@
 # qss-swirl
 Swirl Lessons for the book manuscript, ``A First Course in Quantitative Social Science.''
 
-See also the main repo, [qss](../../../qss), for other supplementary materials.
+See also the main repo, [qss](../../../qss), for other supplementary materials.  If you are an instructor, you may also be interested in [Socratic Swirl](https://github.com/dimagor/socraticswirl), which can be used to monitor and analyze your students' progress in these swirl lessons using a [dashboard](https://github.com/dimagor/socraticswirlInstructor).
 
 * Install the `swirl` package:
 ```
