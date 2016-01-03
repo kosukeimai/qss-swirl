@@ -1,6 +1,8 @@
 language: r
-warnings_are_errors: true
 sudo: required
+
+warnings_are_errors: true
+r_packages: swirl
 
 env:
  global:
