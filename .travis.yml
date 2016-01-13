@@ -1,14 +1,16 @@
-language: r
-sudo: required
+# Sample .travis.yml for R projects
 
+language: r
 warnings_are_errors: true
-r_packages: swirl
+sudo: required
 
 env:
  global:
    - CRAN: http://cran.rstudio.com
 
-script: Rscript test.R
+script: 
+   - Rscript Test.R
+   - bash swirl2rnw
 
 notifications:
   email:
