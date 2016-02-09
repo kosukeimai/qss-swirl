@@ -1,4 +1,4 @@
-# qss-swirl
+# qss-swirl [![Build Status](https://travis-ci.org/kosukeimai/qss-swirl.svg?branch=master)](https://travis-ci.org/kosukeimai/qss-swirl)
 Swirl Lessons for the book manuscript, ``A First Course in Quantitative Social Science'' (QSS). See also the main repo, [qss](../../../qss), for other supplementary materials.  
 
 I welcome your contributions.  Please improve these questions and add some new ones so that others can use them!
