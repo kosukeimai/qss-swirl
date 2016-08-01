@@ -54,7 +54,7 @@
 - Class: cmd_question
   Output: 'A dataset called "df" has been pre-loaded for you. It contains three variables x1, x2 and y. Regress y on x1 and x2.'
   CorrectAnswer: lm(y ~ x1 + x2, data = df)
-  AnswerTests: any_of_exprs('lm(y ~ x1 + x2, data = df)', 'lm(df$y ~ df$x1 + df$x2, data = df)')
+  AnswerTests: any_of_exprs('lm(y ~ x1 + x2, data = df)', 'lm(df$y ~ df$x1 + df$x2, data = df)', 'lm(df$y ~ df$x1 + df$x2)')
   Hint: See 'Regression with Multiple Predictors'
 
 # Question 6
