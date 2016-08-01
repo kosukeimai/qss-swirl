@@ -74,7 +74,7 @@
 - Class: cmd_question
   Output: 'How do you see the estimated coefficients from the "fit" object?'
   CorrectAnswer: coef(fit)
-  AnswerTests: any_of_exprs('coef(fit)', 'fit$coef')
+  AnswerTests: any_of_exprs('coef(fit)', 'fit$coef', 'fit$coefficients')
   Hint: See 'Least Squares'
 
 # Question 10
