@@ -16,7 +16,7 @@
 
 # Question 2
 - Class: mult_question
-  Output: 'When hiring, large companies get tons of overqualified applicants, so they are fine with rejecting qualified applicants, though they do want to make sure selected applicants are actually qualified.  Given the null hypothesis that applicants aren't qualified, do large companies care more about Type I or Type II errors?'
+  Output: 'When hiring, large companies get tons of overqualified applicants, so they are fine with rejecting qualified applicants, though they do want to make sure selected applicants are actually qualified.  Given the null hypothesis that applicants are not qualified, do large companies care more about Type I or Type II errors?'
   AnswerChoices: 'Type I; Type II'
   CorrectAnswer: 'Type I'
   AnswerTests: omnitest(correctVal='Type I')
