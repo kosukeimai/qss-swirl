@@ -7,7 +7,7 @@
   Version: 2.3.0
 
 - Class: text
-  Output: 'These exercises are a companion to Chapter 1 of ''A First Course in Quantitative Social Science''. When you see ..., press Enter.'
+  Output: 'These exercises are a companion to Chapter 1 of ''Quantitative Social Science: Introduction''. When you see ..., press Enter.'
 
 - Class: text
   Output: 'If at any time you need help with R, you can type help.start() at the prompt which will open an index of R materials. Many R resources are also available on the web and are easily found through a web search.'

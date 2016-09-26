@@ -7,7 +7,7 @@
   Version: 2.2.21
 
 - Class: text
-  Output: 'These exercises are a companion to Chapter 1 of ''A First Course in Quantitative Social Science''.'
+  Output: 'These exercises are a companion to Chapter 1 of ''Quantitative Social Science: Introduction''.'
 
 # Question 1
 - Class: cmd_question
