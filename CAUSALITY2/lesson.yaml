@@ -13,7 +13,7 @@
 # Introduction #
 ################
 - Class: text
-  Output: 'These exercises are a companion to Chapter 2 of ''A First Course in Quantitative Social Science''.'
+  Output: 'These exercises are a companion to Chapter 2 of ``Quantitative Social Science: Introduction''.'
 
 ## Conceptual Questions
 # Question 1
@@ -98,9 +98,9 @@
 
 # Question 9
 - Class: cmd_question
-  Output: 'Try using "tapply()" to find the turnout rate in 2008 for each experimental group identified by the variable "messages".'
-  CorrectAnswer: tapply(social$primary2008, social$messages, mean)
-  AnswerTests: any_of_exprs('tapply(social$primary2008, social$messages, mean)', 'tapply(social[, "primary2008"], social[, "messages"], mean)', 'tapply(social$primary2008, social[, "messages"], mean)', 'tapply(social[, "primary2008"], social$messages, mean)')
+  Output: 'Try using "tapply()" to find the turnout rate in 2006 for each experimental group identified by the variable "messages".'
+  CorrectAnswer: tapply(social$primary2006, social$messages, mean)
+  AnswerTests: any_of_exprs('tapply(social$primary2006, social$messages, mean)', 'tapply(social[, "primary2006"], social[, "messages"], mean)', 'tapply(social$primary2006, social[, "messages"], mean)', 'tapply(social[, "primary2006"], social$messages, mean)')
   Hint: 'See ''Social Pressure and Voter Turnout''.'
 
 - Class: text
