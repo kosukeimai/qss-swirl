@@ -39,7 +39,7 @@
 
 # Question 5
 - Class: cmd_question
-  Output: 'Suppose the standard deviation of a given population is 10. What is the standard deviation within a sample of size 25 from that population?'
+  Output: 'Suppose the standard deviation of a given population is 10. What is the standard deviation of sample mean within a sample of size 25 from that population?'
   CorrectAnswer: '2'
   AnswerTests: omnitest(correctExpr='2')
   Hint: See 6.5.2. What does the CLT say about the variance of a sample?
