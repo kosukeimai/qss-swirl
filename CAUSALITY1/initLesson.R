@@ -10,8 +10,6 @@ lesson_dir <- file.path(path.package(substring(find("swirl")[1], 9)), "Courses",
 
 # Make path to data and let user call read.csv(data_path)
 data_path <- file.path(lesson_dir, "resume.csv")
-data_path2 <- file.path(lesson_dir, "social.csv")
 
 # Load data into a variable for the user
 resume <- read.csv(data_path, stringsAsFactors=FALSE)
-social <- read.csv(data_path2, stringsAsFactors=FALSE)
