@@ -26,7 +26,7 @@ swirl()
 uninstall_course("qss-swirl")
 ```
 
-* Update the `qss-swirl` lessons:  
+* Update the `qss-swirl` lessons (after loading the `swirl` package):  
 ```
 uninstall_course("qss-swirl") # uninstall the course
 install_course_github("kosukeimai", "qss-swirl") # reinstall the course
