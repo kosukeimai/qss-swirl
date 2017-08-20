@@ -38,8 +38,8 @@
 - Class: mult_question
   Output: 'Look at the map of the United States 2008 presidential election results. Which feature did we use to help visualize the degree of support for Democrats and Republicans?'
   AnswerChoices: 'hue; shade; transparency'
-  CorrectAnswer: transparency
-  AnswerTests: omnitest(correctVal = 'transparency')
+  CorrectAnswer: shade
+  AnswerTests: omnitest(correctVal = 'shade')
   Hint: See 'Colors in R'
   
 # Question 5
