@@ -18,7 +18,7 @@
 
 # Question 2
 - Class: cmd_question
-  Output: 'How would you multiply 2 by the quantity 9 plus 1?'
+  Output: 'How would you multiply 2 by the result of 9 plus 1?'
   CorrectAnswer: '2 * (9 + 1)'
   AnswerTests: any_of_exprs('2 * (9 + 1)', '(9 + 1) * 2')
   Hint: See 'Arithmetic Operations'.
@@ -28,31 +28,31 @@
 
 # Question 3
 - Class: cmd_question
-  Output: 'Create an object called "myobject" and assign the value 10 to it.'
+  Output: 'give the value 10 the name "myobject".'
   CorrectAnswer: 'myobject <- 10'
   AnswerTests: omnitest(correctExpr='myobject <- 10')
   Hint: See 'Objects'.
 
 # Question 4
 - Class: cmd_question
-  Output: 'Subtract 2 from "myobject" and assign it to the object "result".'
+  Output: 'Subtract 2 from "myobject" and call it "result".'
   CorrectAnswer: 'result <- myobject - 2'
   AnswerTests: omnitest(correctExpr = 'result <- myobject - 2')
-  Hint: See 'Objects'. 
+  Hint: See 'Objects'.
 
 # Question 5
 - Class: cmd_question
   Output: 'Use a function to find the class of "result".'
   CorrectAnswer: 'class(result)'
   AnswerTests: omnitest(correctExpr= 'class(result)')
-  Hint: See 'Objects'. 
+  Hint: See 'Objects'.
 
 # Question 6
 - Class: cmd_question
-  Output: 'Replace the object "myobject" with the character ''10''.'
+  Output: 'Reassign "myobject" to refer to the the characters ''10''.'
   CorrectAnswer: 'myobject <- "10"'
   AnswerTests: omnitest(correctExpr='myobject <- \'10\'')
-  Hint: See 'Objects'. 
+  Hint: See 'Objects'.
 
 # Question 7
 - Class: mult_question
@@ -74,10 +74,10 @@
 
 # Question 9
 - Class: cmd_question
-  Output: 'Find the maximum of "x".'
+  Output: 'Find the maximum value in "x".'
   CorrectAnswer: 'max(x)'
   AnswerTests: omnitest(correctExpr = 'max(x)')
-  Hint: See 'Functions'.  
+  Hint: See 'Functions'.
 
 - Class: text
   Output: 'A vector of data called "world.pop" has been loaded with this lesson. The first element is for the year 1950 up to the last element for 2010.'
@@ -87,7 +87,7 @@
 
 # Question 10
 - Class: cmd_question
-  Output: 'Divide each element of "world.pop" by 1000 and assign it to an object called "pop.million".'
+  Output: 'Divide each element of "world.pop" by 1000 and call that "pop.million".'
   CorrectAnswer: 'pop.million <- world.pop / 1000'
   AnswerTests: omnitest(correctExpr='pop.million <- world.pop / 1000')
   Hint: See 'Vectors'.
@@ -97,7 +97,7 @@
 
 # Question 11
 - Class: cmd_question
-  Output: 'Using "data_path", read in "data.csv" and assign it to a data frame object called "df".'
+  Output: 'Using "data_path", read in "data.csv" and as "df".  The first line of the file contains variable names'
   CorrectAnswer: 'df <- read.csv(data_path, header = TRUE)'
   AnswerTests: any_of_exprs('df <- read.csv(data_path, header = TRUE)', 'df <- read.csv(data_path, header = T)', 'df <- read.csv(data_path)')
   Hint: See 'Data Files'.
@@ -114,7 +114,7 @@
 
 # Question 13
 - Class: cmd_question
-  Output: 'Call the variable "world.pop" from the UNpop data frame.'
+  Output: 'Extract the variable "world.pop" from the "UNpop" data frame.'
   CorrectAnswer: 'UNpop$world.pop'
   AnswerTests: omnitest(correctExpr='UNpop$world.pop')
   Hint: See 'Data Files'.
@@ -128,7 +128,7 @@
 
 # Question 15
 - Class: cmd_question
-  Output: 'R uses a special character to denote comments. Use the "print()" function to write ''____ starts every comment''. Fill in the blank with the appropriate character.'
+  Output: 'R uses a special character to denote comments. Use the "print()" function to write ''_ starts every comment''. Replace _ with the appropriate character.'
   CorrectAnswer: 'print("# starts every comment")'
   AnswerTests: omnitest(correctExpr='print("# starts every comment")')
   Hint: See 'Data Files'.
