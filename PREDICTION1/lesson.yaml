@@ -61,10 +61,10 @@
 
 # Question 7
 - Class: cmd_question
-  Output: 'Use the "cat()" function to put together a phrase and the object "n". The final output should read ''The object n has length 10''.'
-  CorrectAnswer: cat("The object n has length", n)
-  AnswerTests: omnitest(correctExpr='cat("The object n has length", n)')
-  Hint: See 'Loop in R'
+  Output: 'Use the "cat()" function to put together a phrase and the object "n". The final output should read ''The object n has value 10''.'
+  CorrectAnswer: cat("The object n has value", n)
+  AnswerTests: omnitest(correctExpr='cat("The object n has value", n)')
+  Hint: See 'Loop in R.' You shouldn't need to type any numbers.
 
 # Question 8
 - Class: cmd_question
