@@ -75,7 +75,7 @@
   Output: 'Looking at the summary statistics, what is the mean number of years of education among the respondents?'
   CorrectAnswer: '4'
   AnswerTests: any_of_exprs('4', '4.0', '4.00', '4.002','4.002179')
-  Hint: See 'Measuring Civilian Victimization during Wartime'
+  Hint: See 'Measuring Civilian Victimization during Wartime.' Interpret the summary statistics and type the number of years, don't use any functions.
 
 # Question 9
 - Class:  cmd_question
