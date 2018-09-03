@@ -172,9 +172,3 @@
 - Class: text
   Output: 'You''ve successfully completed part 1 of the Intro course!'
 
-- Class: mult_question
-  Output: Would you like to submit the log of this lesson?
-  AnswerChoices: Yes;No
-  CorrectAnswer: NULL
-  AnswerTests: submit_log()
-  Hint: hint
