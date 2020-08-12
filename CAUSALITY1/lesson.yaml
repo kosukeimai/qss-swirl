@@ -134,4 +134,5 @@
   Hint: 'See ''Racial Discrimination in the Labor Market''.'
 
 - Class: text
-  Output: 'You''ve successfully completed part 1 of the Causality course!'
+  Output: >
+    You've successfully completed part 1 of the Causality course!
