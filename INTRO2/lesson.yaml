@@ -7,28 +7,34 @@
   Version: 2.2.21
 
 - Class: text
-  Output: 'These exercises are a companion to Chapter 1 of ''Quantitative Social Science: Introduction''.'
+  Output: >
+    These exercises are a companion to Chapter 1 of
+    'Quantitative Social Science: Introduction'.
 
 # Question 1
 - Class: cmd_question
   Output: 'How would you multiply 4 by 7?'
   CorrectAnswer: '4 * 7'
-  AnswerTests: omnitest(correctExpr='4 * 7')
+  AnswerTests: any_of_exprs('4 * 7', '7 * 4')
   Hint: See 'Arithmetic Operations'.
 
 # Question 2
 - Class: cmd_question
   Output: 'How would you multiply 2 by the result of 9 plus 1?'
   CorrectAnswer: '2 * (9 + 1)'
-  AnswerTests: any_of_exprs('2 * (9 + 1)', '(9 + 1) * 2')
+  AnswerTests: >-
+    any_of_exprs('2 * (9 + 1)', '(9 + 1) * 2', '2 * (1 + 9)', '(1 + 9) * 2')
   Hint: See 'Arithmetic Operations'.
 
 - Class: text
-  Output: 'R will treat numbers like characters if you tell it to. However, you will no longer be able to use arithmetic operations on the object.'
+  Output: >
+    R will treat numbers like characters if you tell it to.
+    However, you will no longer be able to use arithmetic operations
+    on the object.
 
 # Question 3
 - Class: cmd_question
-  Output: 'give the value 10 the name "myobject".'
+  Output: 'Assign the value 10 to "myobject".'
   CorrectAnswer: 'myobject <- 10'
   AnswerTests: omnitest(correctExpr='myobject <- 10')
   Hint: See 'Objects'.
@@ -63,37 +69,51 @@
   Hint: See 'Objects'.
 
 - Class: text
-  Output: 'A vector called "x" with 10 integers from 1 to 100 has been included in this lesson.'
+  Output: >
+    A vector called "x" with 10 integers from 1 to 100 has
+    been included in this lesson.
 
 # Question 8
 - Class: cmd_question
   Output: 'Concatenate the first two elements of "x".'
   CorrectAnswer: 'c(x[1],x[2])'
-  AnswerTests: any_of_exprs('c(x[1],x[2])', 'x[c(1,2)]', 'x[1:2]')
+  AnswerTests: >-
+    any_of_exprs(
+      'c(x[1],x[2])', 'x[c(1,2)]', 'x[1:2]', 'x[seq(2)]', 'x[seq(1, 2)]',
+      'x[seq(1, 2, by = 1)]'
+    )
   Hint: See 'Vectors'.
 
 # Question 9
 - Class: cmd_question
   Output: 'Find the maximum value in "x".'
   CorrectAnswer: 'max(x)'
-  AnswerTests: omnitest(correctExpr = any_of_exprs('max(x)', 'max(x, na.rm = TRUE)'))
+  AnswerTests: any_of_exprs('max(x)', 'max(x, na.rm = TRUE)')
   Hint: See 'Functions'.
 
 - Class: text
-  Output: 'A vector of data called "world.pop" has been loaded with this lesson. The first element is for the year 1950 up to the last element for 2010.'
+  Output: >
+    A vector of data called "world.pop" has been loaded with this lesson.
+    The first element is for the year 1950 up to the last element for 2010.
 
 - Class: text
-  Output: '"world.pop" is a numeric vector so we can perform arithmetic operations on it.'
+  Output: >
+    "world.pop" is a numeric vector
+    so we can perform arithmetic operations on it.
 
 # Question 10
 - Class: cmd_question
-  Output: 'Divide each element of "world.pop" by 1000 and call the result "pop.million".'
+  Output: >
+    Divide each element of "world.pop" by 1000
+    and call the result "pop.million".
   CorrectAnswer: 'pop.million <- world.pop / 1000'
   AnswerTests: omnitest(correctExpr='pop.million <- world.pop / 1000')
   Hint: See 'Vectors'.
 
 - Class: text
-  Output: 'Included in this lesson is a CSV data file called "data.csv". For convenience, the file path to "data.csv" is called "data_path".'
+  Output: >
+    Included in this lesson is a CSV data file called "data.csv".
+    For convenience, the file path to "data.csv" is called "data_path".
 
 # Question 11
 - Class: cmd_question
@@ -104,13 +124,21 @@
 
 # Question 12
 - Class: cmd_question
-  Output: 'Using "data_path" as the path, read the content of the data file and call it "df".'
+  Output: >
+    Using "data_path" as the path,
+    read the content of the data file and call it "df".
   CorrectAnswer: 'df <- read.csv(data_path, header = TRUE)'
-  AnswerTests: any_of_exprs('df <- read.csv(data_path, header = TRUE)', 'df <- read.csv(data_path, header = T)', 'df <- read.csv(data_path)')
+  AnswerTests: >-
+    any_of_exprs(
+      'df <- read.csv(data_path, header = TRUE)',
+      'df <- read.csv(data_path, header = T)',
+      'df <- read.csv(data_path)'
+    )
   Hint: See 'Data Files'.
 
 - Class: text
-  Output: 'A data frame object called "UNpop" has already been included in this lesson.'
+  Output: >
+    A data frame object called "UNpop" has already been included in this lesson.
 
 # Question 13
 - Class: cmd_question
@@ -128,17 +156,38 @@
 
 # Question 15
 - Class: cmd_question
-  Output: 'Use indexing and/or the $ operator to look at the last four observations of the "year" variable from the "UNpop" data frame.'
+  Output: >
+    Use indexing and/or the $ operator to look at the last four observations
+    of the "year" variable from the "UNpop" data frame.
   CorrectAnswer: 'UNpop$year[4:7]'
-  AnswerTests: any_of_exprs('UNpop[4:7, "year"]', 'UNpop[4:7, 2]', 'UNpop$year[4:7]', 'UNpop[c(4:7), "year"]', 'UNpop[c(4:7), 2]', 'UNpop$year[c(4:7)]', 'UNpop$year[seq(from = 4, to = 7)]')
+  AnswerTests: >-
+    any_of_exprs(
+      'UNpop[4:7, "year"]', 'UNpop[4:7, 2]', 'UNpop$year[4:7]',
+      'UNpop[c(4:7), "year"]', 'UNpop[c(4:7), 2]', 'UNpop$year[c(4:7)]',
+      'UNpop$year[seq(from = 4, to = 7)]',
+      'UNpop$year[seq(from = 4, to = 7, by = 1)]',
+      'UNpop[(dim(UNpop)[1] - 3):dim(UNpop)[1], "year"]',
+      'UNpop[(dim(UNpop)[1] - 3):dim(UNpop)[1], 2]',
+      'UNpop$year[(dim(UNpop)[1] - 3):dim(UNpop)[1]]',
+      'UNpop[c((dim(UNpop)[1] - 3):dim(UNpop)[1]), "year"]',
+      'UNpop[c((dim(UNpop)[1] - 3):dim(UNpop)[1]), 2]',
+      'UNpop$year[c((dim(UNpop)[1] - 3):dim(UNpop)[1])]',
+      'UNpop$year[seq(from = dim(UNpop)[1] - 3, to = dim(UNpop)[1])]',
+      'UNpop$year[seq(from = dim(UNpop)[1] - 3, to = dim(UNpop)[1], by = 1)]'
+    )
   Hint: See 'Data Files'.
 
 - Class: text
-  Output: 'Notice that you have to quote the name of the variable if you index into "UNpop", but not if you use the dollar sign.'
+  Output: >
+    Notice that you have to quote the name of the variable
+    if you index into "UNpop", but not if you use the dollar sign.
 
 # Question 16
 - Class: cmd_question
-  Output: 'R uses a special character to denote comments. Use the "print()" function to write ''X starts every comment''. Replace X with the appropriate character.'
+  Output: >
+    R uses a special character to denote comments.
+    Use the "print()" function to write 'X starts every comment'.
+    Replace X with the appropriate character.
   CorrectAnswer: 'print("# starts every comment")'
   AnswerTests: omnitest(correctExpr='print("# starts every comment")')
   Hint: See 'Data Files'.
@@ -151,4 +200,5 @@
   Hint: See 'Data Files'.
 
 - Class: text
-  Output: 'You''ve successfully completed part 2 of the Intro course!'
+  Output: >
+    You've successfully completed part 2 of the Intro course!
