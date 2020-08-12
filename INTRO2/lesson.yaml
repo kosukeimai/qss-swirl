@@ -76,7 +76,7 @@
 - Class: cmd_question
   Output: 'Find the maximum value in "x".'
   CorrectAnswer: 'max(x)'
-  AnswerTests: omnitest(correctExpr = 'max(x)')
+  AnswerTests: omnitest(correctExpr = any_of_exprs('max(x)', 'max(x, na.rm = TRUE)'))
   Hint: See 'Functions'.
 
 - Class: text
