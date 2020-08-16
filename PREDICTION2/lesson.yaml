@@ -8,10 +8,12 @@
 
 - Class: text
   Output: 'The following exercises are a companion to Chapter 4: Prediction.'
-  
-# Question 1  
+
+# Question 1
 - Class: mult_question
-  Output: 'True or False: A positive correlation means that one variable is more likely to be above its mean when the other variable is also above its mean.'
+  Output: >
+    True or False: A positive correlation means that one variable is more likely
+    to be above its mean when the other variable is also above its mean.
   AnswerChoices: 'True; False'
   CorrectAnswer: 'True'
   AnswerTests: omnitest(correctVal='True')
@@ -19,14 +21,18 @@
 
 # Question 2
 - Class: cmd_question
-  Output: 'The intercept a in the model y = a + bx + e represents the average value of y when x is equal to _____.'
+  Output: >
+    The intercept a in the model y = a + bx + e represents
+    the average value of y when x is equal to _____.
   CorrectAnswer: '0'
   AnswerTests: omnitest(correctExpr='0')
   Hint: See 'Least squares'
 
 # Question 3
 - Class: mult_question
-  Output: 'We use the regression line to predict the value of the outcome variable y hat, otherwise known as _____'
+  Output: >
+    We use the regression line to predict the value of the outcome variable
+    y hat, otherwise known as _____.
   AnswerChoices: 'predicted value; fitted value; both of these'
   CorrectAnswer: both of these
   AnswerTests: omnitest(correctVal='both of these')
@@ -42,7 +48,9 @@
 
 # Question 5
 - Class: mult_question
-  Output: 'The difference between the observed outcome and its predicted value is called a _______.'
+  Output: >
+    The difference between the observed outcome and its predicted value is
+    called a _______.
   AnswerChoices: 'residual; prediction error; either of these'
   CorrectAnswer: either of these
   AnswerTests: omnitest(correctVal='either of these')
@@ -58,7 +66,9 @@
 
 # Question 7
 - Class: cmd_question
-  Output: 'We have included two vectors x and y. Regress y on x and assign it to an object called "fit".'
+  Output: >
+    We have included two vectors x and y.
+    Regress y on x and assign it to an object called "fit".
   CorrectAnswer: fit <- lm(y ~ x)
   AnswerTests: omnitest(correctExpr='fit <- lm(y ~ x)')
   Hint: See 'Least Squares'
@@ -74,18 +84,28 @@
 - Class: cmd_question
   Output: 'How do you see the estimated coefficients from the "fit" object?'
   CorrectAnswer: coef(fit)
-  AnswerTests: any_of_exprs('coef(fit)', 'fit$coef', 'fit$coefficients')
+  AnswerTests: >-
+    any_of_exprs(
+      'coef(fit)',
+      'coefficients(fit)',
+      'fit$coef',
+      'fit$coefficients'
+    )
   Hint: See 'Least Squares'
 
 # Question 10
 - Class: cmd_question
   Output: 'What are the predicted values?'
   CorrectAnswer: fitted(fit)
-  AnswerTests: any_of_exprs('fitted(fit)', 'predict(fit)')
+  AnswerTests: >-
+    any_of_exprs(
+      'fitted(fit)',
+      'fit$fitted.values',
+      'predict(fit)'
+    )
   Hint: See 'Least Squares'
 
 - Class: text
-  Output: 'You''ve successfully completed part 2 of the Prediction course!'
-
-
+  Output: >
+    You've successfully completed part 2 of the Prediction course!
 
