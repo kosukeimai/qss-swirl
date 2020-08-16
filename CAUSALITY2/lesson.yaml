@@ -110,10 +110,15 @@
   AnswerTests: >-
     any_of_exprs(
       'mean(resume$call[resume$sex == "female"])',
+      'mean(resume[resume$sex == "female", ]$call)',
       'mean(resume[resume$sex == "female", "call"])',
-      'mean(resume[resume[, "sex"] == "female", "call"])'
+      'mean(resume[resume[, "sex"] == "female", "call"])',
+      'mean(resume$call[resume[, "sex"] == "female"])',
+      'mean(resume[resume[, "sex"] == "female", ]$call)'
     )
-  Hint: 'See ''Subsetting the Data in R''.'
+  Hint: >
+    See Subsetting the Data in R'.
+    Remember to use indexing instead of "subset()".
 
 - Class: text
   Output: >
