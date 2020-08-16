@@ -13,12 +13,18 @@
 # Introduction #
 ################
 - Class: text
-  Output: 'These exercises are a companion to Chapter 2 of ''Quantitative Social Science: Introduction''. When you see ..., press Enter.'
+  Output: >
+    These exercises are a companion to Chapter 2 of
+    'Quantitative Social Science: Introduction'.
+    When you see ..., press Enter.'
 
 ## Conceptual Questions
 # Question 1
 - Class: mult_question
-  Output: 'Suppose a variable is binary, that is, it takes on values of either 0 or 1 (for example, female gender). Which of the following is the same as its sample mean?'
+  Output: >
+    Suppose a variable is binary, that is, it takes on values of either 0 or 1
+    (for example, female gender).
+    Which of the following is the same as its sample mean?
   AnswerChoices: 'the sample median; the sample rate of 1''s; neither of these'
   CorrectAnswer: the sample rate of 1's
   AnswerTests: omnitest(correctVal="the sample rate of 1's")
@@ -34,14 +40,27 @@
 
 # Question 3
 - Class: cmd_question
-  Output: 'Translate the following statement using R''s logical values (i.e., "TRUE" and "FALSE") and operators (i.e., !, =, &, and |): True or false is not false.'
+  Output: >
+    Translate the following statement using R's logical values
+    (i.e., "TRUE" and "FALSE") and operators (i.e., !, =, &, and |):
+    True or false is not false.
   CorrectAnswer: (TRUE | FALSE) == !FALSE
-  AnswerTests: any_of_exprs("(TRUE | FALSE) == !FALSE", "TRUE | FALSE == !FALSE", "TRUE | FALSE != FALSE", "(TRUE | FALSE) != FALSE", "T|F != F", "(T|F) != F", "T|F == !F", "(T|F) == !F")
-  Hint: 'See ''Subsetting the Data in R'' (and be sure you use proper capitalization and spacing!).'
+  AnswerTests: >-
+    any_of_exprs(
+      "(TRUE | FALSE) == !FALSE", "TRUE | FALSE == !FALSE",
+      "TRUE | FALSE != FALSE", "(TRUE | FALSE) != FALSE",
+      "T|F != F", "(T|F) != F", "T|F == !F", "(T|F) == !F"
+    )
+  Hint: >
+    See 'Subsetting the Data in R'
+    (and be sure you use proper capitalization and spacing!).
 
 # Question 4
 - Class: mult_question
-  Output: 'In order to calculate the mean of a variable we have used the "length()" function in the denominator. The "length()" of a vector is equivalent to __________'
+  Output: >
+    In order to calculate the mean of a variable we have used the "length()"
+    function in the denominator.
+    The "length()" of a vector is equivalent to __________
   AnswerChoices: 'the number of elements; the height; the maximum'
   CorrectAnswer: the number of elements
   AnswerTests: omnitest(correctVal='the number of elements')
@@ -50,20 +69,28 @@
 # Question 5
 - Class: mult_question
   Output: 'How are factor variables different from categorical variables?'
-  AnswerChoices: 'They are the same; Factor variables contain numeric values; Categorical variables tend to have more levels or categories'
+  AnswerChoices: >
+    They are the same; Factor variables contain numeric values;
+    Categorical variables tend to have more levels or categories
   CorrectAnswer: They are the same
   AnswerTests: omnitest(correctVal='They are the same')
   Hint: 'See ''Subsetting the Data in R''.'
 
 ## Programming questions
 - Class: text
-  Output: 'A variety of external data files can be loaded into R, such as tables with comma separated values (or CSV''s) and R Workspace files (RData files).' 
+  Output: >
+    A variety of external data files can be loaded into R,
+    such as tables with comma separated values (or CSV's)
+    and R Workspace files (RData files).
 
 # Question 1
 - Class: cmd_question
-  Output: 'Using the read.csv() function, we have pre-loaded the external data file "resume.csv" as an object called "resume". Call the head() function to look at the first six rows of "resume".'
+  Output: >
+    Using the read.csv() function, we have pre-loaded the external data file
+    "resume.csv" as an object called "resume". Call the head() function to look
+    at the first six rows of "resume".
   CorrectAnswer: head(resume)
-  AnswerTests: omnitest(correctExpr="head(resume)")
+  AnswerTests: any_of_exprs("head(resume)", "head(resume, 6)")
   Hint: 'See ''Data Files'' in Chapter 1.'
 
 # Question 2
@@ -75,14 +102,20 @@
 
 # Question 3
 - Class: cmd_question
-  Output: 'This question has two parts. First, create a summary of "resume" that contains, along with other information, the sample means of each variable in "resume".'
+  Output: >
+    This question has two parts. First, create a summary of "resume" that
+    contains, along with other information, the sample means of each variable
+    in "resume".
   CorrectAnswer: summary(resume)
   AnswerTests: omnitest(correctExpr="summary(resume)")
   Hint: 'See ''Racial Discrimination in the Labor Market''.'
 
 # Question 4
 - Class: mult_question
-  Output: 'Second, looking at the summary of "resume", what was the callback rate in the data? In other words, about what percent of the fictitious applicants received a call back?'
+  Output: >
+    Second, looking at the summary of "resume", what was the callback rate
+    in the data? In other words, about what percent of the fictitious applicants
+    received a call back?
   AnswerChoices: '2%; 16%; 8%; 9%'
   CorrectAnswer: 8%
   AnswerTests: omnitest(correctVal="8%")
@@ -90,10 +123,19 @@
 
 # Question 5
 - Class: cmd_question
-  Output: '"resume" contains two binary variables, "sex" and "call". Create a table that compares the number of female applicants to the number of male applicants who did and did not receive a call back. Be sure to label the rows as ''sex'' and the columns as ''call''.'
+  Output: >
+    "resume" contains two binary variables, "sex" and "call".
+    Create a table that compares the number of female applicants to the number
+    of male applicants who did and did not receive a call back.
+    Be sure to label the rows as 'sex' and the columns as 'call'.
   CorrectAnswer: table(sex = resume$sex, call = resume$call)
-  AnswerTests: omnitest(correctExpr="table(sex = resume$sex, call = resume$call)")
+  AnswerTests: >-
+    any_of_exprs(
+      "table(sex = resume$sex, call = resume$call)",
+      "with(resume, table(sex = sex, call = call))"
+    )
   Hint: 'See ''Racial Discrimination in the Labor Market''.'
 
 - Class: text
-  Output: 'You''ve successfully completed part 1 of the Causality course!'
+  Output: >
+    You've successfully completed part 1 of the Causality course!
