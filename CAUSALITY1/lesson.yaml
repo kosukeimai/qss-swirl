@@ -13,7 +13,10 @@
 # Introduction #
 ################
 - Class: text
-  Output: 'These exercises are a companion to Chapter 2 of ''Quantitative Social Science: Introduction''. When you see ..., press Enter.'
+  Output: >
+    These exercises are a companion to Chapter 2 of
+    'Quantitative Social Science: Introduction'.
+    When you see ..., press Enter.'
 
 ## Conceptual Questions
 # Question 1
@@ -38,7 +41,7 @@
 # Question 3
 - Class: cmd_question
   Output: >
-    Translate the following statement using R''s logical values
+    Translate the following statement using R's logical values
     (i.e., "TRUE" and "FALSE") and operators (i.e., !, =, &, and |):
     True or false is not false.
   CorrectAnswer: (TRUE | FALSE) == !FALSE
@@ -77,7 +80,7 @@
 - Class: text
   Output: >
     A variety of external data files can be loaded into R,
-    such as tables with comma separated values (or CSV''s)
+    such as tables with comma separated values (or CSV's)
     and R Workspace files (RData files).
 
 # Question 1
@@ -124,7 +127,7 @@
     "resume" contains two binary variables, "sex" and "call".
     Create a table that compares the number of female applicants to the number
     of male applicants who did and did not receive a call back.
-    Be sure to label the rows as ''sex'' and the columns as ''call''.
+    Be sure to label the rows as 'sex' and the columns as 'call'.
   CorrectAnswer: table(sex = resume$sex, call = resume$call)
   AnswerTests: >-
     any_of_exprs(

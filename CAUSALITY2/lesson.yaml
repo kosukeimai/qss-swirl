@@ -55,11 +55,12 @@
   Output: >
     Take a look at the following nested "ifelse()" statement:
     "social$type <- ifelse(social$yearofbirth <= 1943 & social$primary2004 == 1,
-    ''Senior Voter'',
+    'Senior Voter',
     ifelse(social$yearofbirth <= 1943 & social$primary2004 == 0,
-    ''Senior Non-voter'',
+    'Senior Non-voter',
     ifelse(social$yearofbirth > 1943 & social$primary2004 == 1,
-    ''Non-senior Voter'', ''Non-senior Non-voter'')))"
+    'Non-senior Voter',
+    'Non-senior Non-voter')))"
 
 # Question 3
 - Class: mult_question
