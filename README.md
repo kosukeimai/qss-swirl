@@ -1,5 +1,9 @@
 # qss-swirl [![Build Status](https://travis-ci.org/kosukeimai/qss-swirl.svg?branch=master)](https://travis-ci.org/kosukeimai/qss-swirl)
-Swirl Lessons for the book manuscript, ``Quantitative Social Science: An Introduction'' (QSS), to be published from Princeton University Press in 2017. See also the main repo, [qss](../../../qss), for other supplementary materials.  
+
+*News*: See [Interactive Tutorials for QSS by Matt Blackwell](https://github.com/mattblackwell/qsslearnr) which builds on `qss-swirl` but significantly improves it.
+
+
+Swirl Lessons for the book, ``Quantitative Social Science: An Introduction'' (QSS), published by Princeton University Press in 2017. See also the main repo, [qss](../../../qss), for other supplementary materials.  
 
 I welcome your contributions.  Please improve these questions and add some new ones so that others can use them!
 
