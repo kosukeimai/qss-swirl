@@ -163,6 +163,9 @@
   AnswerTests: >-
     any_of_exprs(
       'UNpop[4:7, "year"]', 'UNpop[4:7, 2]', 'UNpop$year[4:7]',
+      'UNpop$year[c(4, 5, 6, 7)]',
+      'UNpop[c(4, 5, 6, 7), "year"]',
+      'UNpop[c(4, 5, 6, 7), 2]',
       'UNpop[c(4:7), "year"]', 'UNpop[c(4:7), 2]', 'UNpop$year[c(4:7)]',
       'UNpop$year[seq(from = 4, to = 7)]',
       'UNpop$year[seq(from = 4, to = 7, by = 1)]',
